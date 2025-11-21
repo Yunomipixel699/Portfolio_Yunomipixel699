@@ -4,9 +4,15 @@
   <meta charset="utf-8">
   <title>Matsuura699|Yunomi_pixel Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.google.com/specimen/DotGothic16?lang=ja_Jpan&categoryFilters=Feeling:%2FExpressive%2FStiff" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header>
+    <nav class="baner">
+    </nav>
+  </header>
   <div class="main">
     <img class="icon" src="images/my_icon_traced.png" alt="Yunomi_icon">
     <div class="name">
@@ -16,57 +22,152 @@
   </div>
   <h3>Profile</h3>
   <div class="profile">
-    <p>github name: Matsuura699<br>
+    <h4>github name: Matsuura699<br>
       handle name: Yunomi_pixel<br>
-      School 　　: 大阪公立大学工業高等専門学校 知能情報コース 2年<br>
-      Club 　　　: 学友会執行部 / 総合芸術部<br>
-      Others 　　: MikuIT / Klef-Project 所属<br>
-    </p>
+      School 　　: <a href="https://www.ct.omu.ac.jp/">大阪公立大学工業高等専門学校</a> 知能情報コース 2年<br>
+      Club 　　　: <a href="https://osaka-sa.netlify.app/" >学友会執行部</a> / <a href="https://www.instagram.com/art_omuct/">総合芸術部</a><br>
+      Others 　　: <a href="https://mikuit.net/" >MikuIT</a> / Klef-Project 所属<br>
+    </h4>
   </div>
   <h3>Skills</h3>
   <div class="skills_button">
-    <button id="programming_button">Programming</button>
-    <button id="others_button">Others</button>
+    <button id="programming_skills_button">Programming</button>
+    <button id="others_skills_button">Others</button>
   </div>
   <div id="programming_skills">
     <div class="skills_image">
-      <img class="skills" src="images/HTML.png" alt="Yunomi_icon">
-      <img class="skills" src="images/CSS.png" alt="Yunomi_icon">
-      <img class="skills" src="images/python.png" alt="Yunomi_icon">
-      <img class="skills" src="images/VSCode.png" alt="Yunomi_icon">
-      <img class="skills" src="images/github.jpg" alt="Yunomi_icon">
-      <img class="skills" src="images/microbit.jpg" alt="Yunomi_icon">
+      <figure>
+        <img class="skills" src="images/HTML.png" alt="Yunomi_icon">
+        <figcaption>HTML</figcaption>
+      </figure>
+      <figure>
+        <img class="skills" src="images/CSS.png" alt="Yunomi_icon">
+        <figcaption>CSS</figcaption>
+      </figure>
+      <figure>      
+        <img class="skills" src="images/python.png" alt="Yunomi_icon">
+        <figcaption>Python</figcaption>
+      </figure>
+      <figure>
+        <img class="skills" src="images/VSCode.png" alt="Yunomi_icon">
+        <figcaption>VSCode</figcaption>
+      </figure>
+      <figure>
+        <img class="skills" src="images/github.png" alt="Yunomi_icon">
+        <figcaption>github</figcaption>
+      </figure>
     </div>
     <div class="skills_image">
-      <img class="skills" src="images/tinkercad.png" alt="Yunomi_icon">
-      <img class="skills" src="images/arduino.jpg" alt="Yunomi_icon">
-      <img class="skills" src="images/godot.png" alt="Yunomi_icon">
-    </div>
+      <figure>
+        <img class="skills" src="images/microbit.jpg" alt="Yunomi_icon">
+        <figcaption>micro:bit</figcaption>
+      </figure>
+      <figure>
+        <img class="skills" src="images/tinkercad.png" alt="Yunomi_icon">
+        <figcaption>tinkercad</figcaption>
+      </figure>
+      <figure>
+        <img class="skills" src="images/arduino.jpg" alt="Yunomi_icon">
+        <figcaption>Arduino</figcaption>
+      </figure>
+      <figure>
+        <img class="skills" src="images/godot.png" alt="Yunomi_icon">
+        <figcaption>GODOT</figcaption>
+      </figure>
+      </div>
   </div>
   <div id="others_skills" style="display:none;">
     <div class="skills_image">
-      <img class="skills" src="images/edge2.jpg" alt="Yunomi_icon">
-      <img class="skills" src="images/aseprite.png" alt="Yunomi_icon">
-      <img class="skills" src="images/AviUtl.png" alt="Yunomi_icon">
+      <figure>
+        <img class="skills" src="images/edge2.jpg" alt="Yunomi_icon">
+        <figcaption>EDGE2</figcaption>
+      </figure>
+      <figure>
+        <img class="skills" src="images/aseprite.png" alt="Yunomi_icon">
+        <figcaption>Aseprite</figcaption>
+      </figure>
+      <figure>
+        <img class="skills" src="images/AviUtl.png" alt="Yunomi_icon">
+        <figcaption>AviUtl</figcaption>
+      </figure>
     </div>
   </div>
   <script>
-    const programming = document.getElementById("programming_skills");
-    const others = document.getElementById("others_skills");
-    document.getElementById("programming_button").addEventListener("click", () => {
-        programming.style.display = "block";
-        others.style.display = "none";
+    const programming_skills = document.getElementById("programming_skills");
+    const others_skills = document.getElementById("others_skills");
+    document.getElementById("programming_skills_button").addEventListener("click", () => {
+        programming_skills.style.display = "block";
+        others_skills.style.display = "none";
       });
-    document.getElementById("others_button").addEventListener("click", () => {
-        programming.style.display = "none";
-        others.style.display = "block";
+    document.getElementById("others_skills_button").addEventListener("click", () => {
+        programming_skills.style.display = "none";
+        others_skills.style.display = "block";
       });
   </script>
   <h3>Works</h3>
+  <div class="skills_button">
+    <button id="programming_works_button">Programming</button>
+    <button id="others_works_button">Others</button>
+  </div>
+  <div id="programming_works">
+    <div class="works_container">
+      <div class="product">
+      <h5>-Python RPG- ～魔術師リファクタの大迷宮～</h5>
+        <div class="product_image">
+          <img class="works" src="images/works_p1_04.png" alt="Yunomi_icon">
+        </div>
+      <p>Google Colabを用いて、簡易的なダンジョン探索RPGを制作しました。</p>
+      </div>
+      <div class="product">
+        <h5>Cecchino Sniper</h5>
+          <div class="product_image">
+            <video class="works" src="images/work_p2_01.mp4" alt="Yunomi_icon" controls>
+          </div>
+      <p>総合課題実習にて、Web上で遊ぶことができるスナイパーゲームを製作中です。プログラムの一部を担当しています。</p>
+      </div>
+    </div>
+  </div>
+  <div id="others_works" style="display:none;">
+    <div class="works_container">
+    <div class="product">
+        <h5>総合芸術部 作品展示</h5>
+          <div class="product_image">
+            <img class="works" src="images/works_o1_01.png" alt="Yunomi_icon">
+            <img class="works" src="images/works_o1_02.png" alt="Yunomi_icon">
+          </div>
+      <p>総合芸術部にて、2024年度高専祭に向けたドット絵を2枚制作しました。</p>
+      </div>
+      <div class="product">
+        <h5>MikuIT 7月イラスト</h5>
+          <div class="product_image">
+            <img class="works" src="images/works_o2.png" alt="Yunomi_icon">
+          </div>
+        <p>MikuITにおける、7月の季節イラストを制作しました。</p>
+      </div>
+    </div>
+  </div>
+  <script>
+    const programming_works = document.getElementById("programming_works");
+    const others_works = document.getElementById("others_works");
+    document.getElementById("programming_works_button").addEventListener("click", () => {
+        programming_works.style.display = "block";
+        others_works.style.display = "none";
+      });
+    document.getElementById("others_works_button").addEventListener("click", () => {
+        programming_works.style.display = "none";
+        others_works.style.display = "block";
+      });
+  </script>
   <h3>Contact</h3>
   <p>各種SNS</p>
-
-
+  <div class="SNS_image">
+    <a href="https://x.com/Yunomi_pixel" >
+      <img class="SNS" src="images/X.png" alt="X_icon">
+    </a>
+    <a href="https://www.pixiv.net/users/109740251" >
+      <img class="SNS" src="images/pixiv.png" alt="X_icon">
+    </a>
+  </div>
 
 </body>
 </html>

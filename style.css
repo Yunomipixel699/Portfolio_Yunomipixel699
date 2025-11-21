@@ -1,33 +1,77 @@
 body{
     background-color: #e9ffcb;
-    font-family: DotGothic16;
-    color: #363e32
+    margin: 0;
     }
 
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #363e32;
+    padding: 30px 0;
+    z-index: 1000;
+    border-bottom: 6px solid #000000;
+}
+
 h1{
-    font-size: 60px;
+    font-size: 30px;
     margin: 0 auto;
     text-align: center;
     margin-left: 40px;
+    font-family: "Press Start 2P", system-ui;
+    font-style: normal;
 }
 
 h2{
-    font-size: 40px;
+    font-size: 20px;
     text-align: center;
-    margin: 0 auto;
+    margin: 100 auto;
     margin-left: 40px;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
 h3{
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
+    margin: 60px;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
-p{
+h4{
     width: 1000px;
     font-size: 30px;
     margin: 0 auto;
-    text-align: left;
+    font-family: "DotGothic16", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h5{
+    text-align: center;
+    font-size: 20px;
+    font-family: "DotGothic16", system-ui;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+p{
+    text-align: center;
+    font-size: 15px;
+    margin: 0 auto;
+    width: 400px;
+    font-family: "DotGothic16", system-ui;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+.baner{
+    position: fixed;
+    width: 50px;
+    height: auto;
 }
 
 .icon{
@@ -40,26 +84,83 @@ p{
     align-items: center;
     background-color: #d1e191;
     text-align: center;
+    margin-top: 65px;
 }
 
 .profile{
     display: flex;
     font-size: 20px;
+    text-align: left;
+    font-family: "DotGothic16", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+button{
+    background-color: #d1e191;
+    border: 5px solid #363e32;
+    width: 200px;
+    height: auto;
+    padding: 12px 26px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .skills{
     width: 150px;
     height: auto;
     border: 5px solid #363e32;
+    margin: 0 ;
+}
+
+.works{
+    width: auto;
+    height: 200px;
+    margin: 0 ;
+}
+
+.works_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
 }
 
 .skills_button{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 5px;
+}
+
+button:hover {
+    background-color: #abc151;
 }
 
 .skills_image{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 5px;
+    margin-bottom: 10px;
+}
+
+.product{
+    width: 450px;
+    background-color: #d1e191;
+    border: 5px solid #363e32;
+}
+
+.product_image{
     display: flex;
     align-items: center;
     text-align: center;
@@ -68,3 +169,33 @@ p{
     margin: 5px;
 }
 
+figure{
+    margin: 0;
+    text-align: center;
+    margin-top: 10px;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.SNS{
+    width: 150px;
+    height: auto;
+    border: 5px solid #363e32;
+    margin: 0 ;
+}
+
+.SNS_image{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 5px;
+    margin-bottom: 10px;
+}
